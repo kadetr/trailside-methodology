@@ -1,0 +1,99 @@
+---
+sessionId: 260509-0050
+workId: 120
+status: closed
+logFile: logs/session-log-260509-0050.yaml
+created: 260509-0050
+closed: 260509-0050
+---
+
+entries:
+  - ts: 260509-0050
+    primitive: SET
+    target: state/current.yaml session.sessionId
+    result: pass
+  - ts: 260509-0050
+    primitive: UPDATE
+    target: data/work-pool.md — add workId 120 entry
+    result: pass
+  - ts: 260509-0050
+    primitive: UPDATE
+    target: studio/package.json — add @codemirror/view, @codemirror/state, @codemirror/lang-json, @codemirror/lang-xml
+    result: pass
+  - ts: 260509-0050
+    primitive: WRITE
+    target: studio/src/codemirror/error-decorations.ts
+    result: pass
+  - ts: 260509-0050
+    primitive: WRITE
+    target: studio/src/panels/TemplatePanel.tsx
+    result: pass
+  - ts: 260509-0050
+    primitive: WRITE
+    target: studio/src/panels/ContentPanel.tsx
+    result: pass
+  - ts: 260509-0050
+    primitive: WRITE
+    target: studio/src/components/StatusBar.tsx
+    result: pass
+  - ts: 260509-0050
+    primitive: UPDATE
+    target: studio/src/panels/PreviewPanel.tsx — add StaleBanner + lastError prop
+    result: pass
+  - ts: 260509-0050
+    primitive: WRITE
+    target: studio/src/components/StaleBanner.tsx
+    result: pass
+  - ts: 260509-0050
+    primitive: WRITE
+    target: studio/src/components/CompileButton.tsx
+    result: pass
+  - ts: 260509-0050
+    primitive: UPDATE
+    target: studio/electron.main.ts — PDF buffer intercept, mkdir, shell.openPath
+    result: pass
+  - ts: 260509-0050
+    primitive: UPDATE
+    target: studio/src/ipc-types.ts — pdf.filePath, triggerPdfCompile return type
+    result: pass
+  - ts: 260509-0050
+    primitive: UPDATE
+    target: studio/src/App.tsx — wire TemplatePanel, ContentPanel, StatusBar, CompileButton
+    result: pass
+  - ts: 260509-0050
+    primitive: UPDATE
+    target: studio/src/hooks/useCompileWorker.ts — pdfFilePath state
+    result: pass
+  - ts: 260509-0050
+    primitive: WRITE
+    target: studio/tests/panels/TemplatePanel.test.tsx (RT1–RT4)
+    result: pass
+  - ts: 260509-0050
+    primitive: WRITE
+    target: studio/tests/panels/ContentPanel.test.tsx (RT5–RT7)
+    result: pass
+  - ts: 260509-0050
+    primitive: WRITE
+    target: studio/tests/components/StatusBar.test.tsx (RT8–RT11)
+    result: pass
+  - ts: 260509-0050
+    primitive: WRITE
+    target: studio/tests/components/CompileButton.test.tsx (RT12–RT14)
+    result: pass
+  - ts: 260509-0050
+    primitive: WRITE
+    target: studio/tests/codemirror/error-decorations.test.ts (RT15–RT17)
+    result: pass
+  - ts: 260509-0050
+    primitive: VERIFY
+    target: npm run test --workspace=studio — 75/75 pass
+    result: pass
+  - ts: 260509-0050
+    primitive: VERIFY
+    target: npm test (full monorepo) — 78/78 pass, no regressions
+    result: pass
+  - ts: 260509-0050
+    primitive: VERIFY
+    target: PoC criteria 4–5 — manual gate
+    result: pass
+

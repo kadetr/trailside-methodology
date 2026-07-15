@@ -1,0 +1,4 @@
+- ts: YYMMDD-HHMMSS
+  primitive: READ
+  target: x
+  result: pass | fail

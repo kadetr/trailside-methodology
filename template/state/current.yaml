@@ -1,0 +1,50 @@
+# state/current.yaml
+# Live session state. Written by SET only — never by WRITE or UPDATE directly.
+# SET uses dotted paths: SET session.phase 3 / SET work.status in-progress
+# Append to lists: SET document.dirtyFiles[+] "path/to/file"
+
+# ---------------------------------------------------------------------------
+# session
+# ---------------------------------------------------------------------------
+session:
+  sessionId: null
+  loopType: null
+  phase: 1
+  condition: null
+  revision_count: 0
+  lastAction: null
+  verbose: false
+  logFile: null
+
+# ---------------------------------------------------------------------------
+# work
+# ---------------------------------------------------------------------------
+work:
+  workId: null
+  workType: null
+  status: null
+  packages: []
+  planFiles: []
+  blockers: []
+  findings: []
+
+# ---------------------------------------------------------------------------
+# document
+# ---------------------------------------------------------------------------
+document:
+  reads: []
+  dirtyFiles: []
+  pendingChecks: []
+
+# ---------------------------------------------------------------------------
+# snapshot — written at session-close, read at session-open
+# ---------------------------------------------------------------------------
+snapshot:
+  sessionDate: null
+  workId: null
+  phase: null
+  completedSteps: []
+  incompleteSteps: []
+  pendingChecks: []
+  knownIssues: []
+  nextAction: null
