@@ -66,12 +66,6 @@ Both trees have the same shape. That's deliberate — the template *is* the
 instance with the project-specific content removed, not a separate document
 that happens to describe it.
 
-**Note on vocabulary:** `example-paragraf/` currently uses an earlier
-Tool/Skill vocabulary; `template/` uses the current Primitive/Sequence
-naming (renamed to avoid collision with industry-standard "tool use" and
-"skill" terminology). See Article III for the rename rationale. A future
-pass may re-align the instance to match.
-
 ---
 
 ## Reading order

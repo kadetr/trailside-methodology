@@ -41,10 +41,10 @@ document:
 # snapshot — written at session-close, read at session-open
 # ---------------------------------------------------------------------------
 snapshot:
-  sessionDate: 260509-0050
-  workId: 120
-  phase: 3
-  completedSteps: [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19]
+  sessionDate: null
+  workId: null
+  phase: null
+  completedSteps: []
   incompleteSteps: []
   pendingChecks: []
   knownIssues: []
