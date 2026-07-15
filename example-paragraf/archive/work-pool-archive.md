@@ -40,6 +40,7 @@ frequency:
 | 117 | package | studio schema translation layer | done | studio | — | v0.7.0 | — | 260416-2230 | 260508-1900 |
 | 118 | package | studio electron shell ipc | done | studio | — | — | — | 260508-2330 | 260508-2345 |
 | 119 | package | studio preview panel frame overlay compile settings | done | studio | — | — | — | 260508-1030 | 260509-0000 |
+| 120 | package | Studio — Editors, Error Handling & PDF Compile | done | [studio] | — | — | — | 260508-1030 | 260509-0050 |
 
 ---
 
