@@ -29,15 +29,12 @@ companion write-up: **[A Practitioner's Account — Article III](#)**
 Four layers, each with a fixed contract. This table is the entire security
 model — everything else in the repo exists to enforce it.
 
-| Layer | Caller | `ASK` | `PRESENT` | Judgment | May call |
-|---|---|---|---|---|---|
-| **Primitive** | Sequences, Procedures, Flows | never | Flows + Procedure terminals only | none | nothing |
-| **Sequence** | Procedures, Flows | never | never | none | Primitives only |
-| **Procedure** | Flows | never | terminal only | none — data conditions only | Primitives + Sequences |
-| **Flow** | Human | always | always | **owner** | all layers |
-
-- **Data condition** — branching on a file value or state value (`IF status == done`). Legal everywhere.
-- **Judgment** — branching on interpretation, ambiguity, or human preference. Legal in Flows only, and only through `ASK`.
+| Layer | Condition (data) | Judgment (via `ASK`) | May call |
+|---|---|---|---|
+| Primitive | no | no | nothing |
+| Sequence | no | no | primitives |
+| Procedure | yes | no | primitives, sequences |
+| Flow | yes | **yes — only here** | all layers |
 
 A Procedure or Sequence that needs to make a judgment call isn't
 under-specified — it's a design signal that the work belongs one layer up.
